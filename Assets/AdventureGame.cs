@@ -20,10 +20,18 @@ public class AdventureGame : MonoBehaviour
         state = startingState;
         textComponent.text = state.GetStateStory();
 
-        
-    void Update()
-    {
-        
-    }
+
+            void Update()
+            {
+                //Aqui o código está ligeiramente diferente do original da aula
+                ManageState();
+            }
+
+// antes era "private void ManageState()" e acusava erro (rauL)
+            void ManageState(){
+                var nextStates=state.GetNextStates();
+            }
+  
+
     }
 }
