@@ -23,11 +23,11 @@ public class AdventureGame : MonoBehaviour
     }
             void Update()
             {
-                //Aqui o código está ligeiramente diferente do original da aula
+                //voltando ao código original
                 ManageState();
             }
 
-// antes era "private void ManageState()" e acusava erro (rauL)
+// consertado erro do  "private void ManageState()", antes acusava erro (rauL)
             private void ManageState(){
                 var nextStates=state.GetNextStates();
 
