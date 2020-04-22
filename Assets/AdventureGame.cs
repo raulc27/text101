@@ -10,6 +10,7 @@ public class AdventureGame : MonoBehaviour
     [SerializeField] Text textComponent;
     [SerializeField] State startingState;
 
+
     State state;
 
 
@@ -18,11 +19,11 @@ public class AdventureGame : MonoBehaviour
     {
         state = startingState;
         textComponent.text = state.GetStateStory();
-    }
 
-    // Update is called once per frame
+        
     void Update()
     {
         
+    }
     }
 }
