@@ -25,7 +25,7 @@ MonoBehaviour:
 
     1. Take them head on - rush the 10 guards.
 
-    2. Senak my way to the emergency exit.'
+    2. Sneak my way to the emergency exit.'
   nextStates:
   - {fileID: 11400000, guid: 827428595a6944f8a9607a167c1cd8b3, type: 2}
   - {fileID: 11400000, guid: 6aac8e0839f0f3e2fb25ca09cad3da3b, type: 2}
