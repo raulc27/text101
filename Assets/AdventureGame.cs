@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;   
 
 //codigo modificado
+//**
 
 public class AdventureGame : MonoBehaviour
 {
