@@ -33,6 +33,20 @@ public class AdventureGame : MonoBehaviour
 // consertado erro do  "private void ManageState()", antes acusava erro (rauL)
             private void ManageState(){
                 var nextStates=state.GetNextStates();
+
+                for(int index = 0; index<nextStates.Length; index++)
+                {
+
+                        if(Input.GetKeyDown(KeyCode.Alpha1+index))
+                    {
+                        state = nextStates[index];
+                    }
+
+                }
+
+                textComponent.text=state.GetStateStory();
+
+
 /*
                 if(Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -47,7 +61,6 @@ public class AdventureGame : MonoBehaviour
                     state = nextStates[2];
                 }
 */
-                textComponent.text=state.GetStateStory();
             }
   
 
